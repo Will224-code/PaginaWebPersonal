@@ -1,0 +1,11 @@
+div.js{
+    border: 3px solid black;
+}
+
+label.js{
+    border: 3px solid black;
+    background: mediumslateblue;
+    padding: 10px;
+    margin:20px;
+    height: 45px;
+}

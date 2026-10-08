@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina de William Enrique Caamal Caamal</title>
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <link rel="stylesheet" href="./estilos/estilosJs.css">
+        <script src="./script/fecha.js" defer></script>
+        <script src="./script/convertirMoneda.js" defer></script>
+        <script src="./script/calculadora.js" defer></script>
+        <script src="./script/cuestionario.js" defer></script>
+    </head>
+
+    <!--Actividades de js : echo por will-->
+
+     <!--fecha-->
+    <div id="fecha" class="js"></div>
+
+
+    <div>
+
+        <!--encabezado-->
+        <header>
+            <!--botones-->    
+            <a href="index.html">Pagina inicial</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="autobiografia.html">Autobiografia</a>
+            <a href="contacto.html">Formulario de contacto</a>
+        </header>
+
+        <!--contenido-->
+        <h1>Mi pagina web</h1>
+        <h2>Tarea</h2>
+        <p>Esta tarea esta echa con el objetivo de practicar la sintaxis de HTML y de su esctructura como pagina web</p>
+        <p><strong>Mi nombre es William Enrique Caamal Caamal</strong></p>
+        <p><em>y este texto esta en cursiva</em></p>
+        <p><u>y este texto es subrayado</u></p>
+
+        <!--pie de pagina-->
+        <footer>
+            <p> Echo por will</p>
+        </footer>
+
+    </div>
+
+    <!--Cambio de moneda-->
+    <div>
+        <form id="formularioConvertidor">
+         <select name="monedaOrigen" id="monedaElejido"> 
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="MXN">Peso Mexicano (MXN)</option>
+        </select>
+
+        <select name="monedaDestino" id="monedaCambio"> 
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="MXN">Peso Mexicano (MXN)</option>
+        </select>
+
+            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad a cambiar" min="0" step="any" required>
+            <button  type="submit" id="cambiar" >Cambiar</button>
+        </form> 
+
+        <!-- En lugar de <div id="resultado"></div> -->
+        <output id="resultado" for="formularioConvertidor"></output>
+    </div>
+
+
+    <!--Calculadora-->
+    <div>
+        <form id="formCalculadora">
+            <input type="number" id="numero1" name="numero1" placeholder="Número 1" required>
+            <input type="number" id="numero2" name="numero2" placeholder="Número 2" required>
+            <button type="submit" id="calcular">Calcular</button>
+        </form>
+        <output id="resultadoCalculadora" for="formCalculadora"></output>
+    </div>
+
+    <!-- Cuestionario Simple -->
+    <div class="js">
+        <p>¿Cuál es la capital de México?</p>
+        
+        <!-- La opción correcta llevará el valor "correcto" -->
+        <label class="js"><input type="radio" name="capital" value="incorrecto"> Monterrey</label><br>
+        <label class="js"><input type="radio" name="capital" value="correcto"> CDMX</label><br>
+        <label class="js"><input type="radio" name="capital" value="incorrecto"> Guadalajara</label><br>
+        
+        <br>
+        <button type="button" id="verificar">Verificar Respuesta</button>
+        
+        <output id="resultadoCuestionario"></output>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,81 @@
+/*encabezado*/
+header{
+    display: flex;  
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+    gap: 25px;              /* espacio de separación entre elementos */
+    height: 60px;       
+    background: rgb(163, 93, 188);
+    border: 2px solid black;
+}
+
+/*botones*/
+a{
+    border: 3px solid black;
+    background: beige;
+    padding: 10px;
+}
+
+/*formularios*/
+form {    
+    border: 3px solid black; 
+    padding: 20px;         
+    background-color: #edea9d; 
+    margin: 30px;
+}
+
+fieldset {
+    border: 3px solid black; 
+    padding: 20px;         
+    background-color: #edea9d;  
+    margin: 30px;
+}
+
+
+
+/*textos*/
+h1, h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/*bordes de las tablas*/
+table{
+    width: max-content;   
+    max-width: 90%;        
+    margin: 20px auto 0 auto;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    border: 3px solid black;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*tamaño de las imagenes*/
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;        
+}
+
+/*pie de pagina*/
+footer{
+    display: flex;
+    justify-content: center;
+    background: rgb(163, 93, 188);
+    border: 2px solid black;
+    margin: 50px 0 0 0;
+}
+
+footer p{
+    color: #ffffff;
+    font-size:larger;
+}

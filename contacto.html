@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">  
+    <!-- BUENA PRÁCTICA: Vinculamos el archivo JS con defer en el head -->
+    <script src="./script/validacion.js" defer></script>
+</head>
+<body>
+
+    <!--encabezado-->
+    <header>
+        <a href="index.html">Pagina inicial</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="autobiografia.html">Autobiografia</a>
+        <a href="contacto.html">Formulario de contacto</a>
+    </header>
+
+    <h1>Formulario de contacto</h1> 
+
+    <!-- UNIFICADO: Un solo formulario envuelve todos tus campos -->
+    <form id="formularioContacto">
+        
+        <!-- Datos personales -->
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <!-- Corregido: "apellido" coincide con el id -->
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <!-- Formulario 2 -->
+        <fieldset>
+            <legend>Uso de Radio Button</legend>
+            <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+            <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+        </fieldset>
+
+        <!-- Formulario 3 -->
+        <fieldset>
+            <legend>Uso de CheckBox</legend>
+            <label><input type="checkbox" name="deporte" value="futbol"> Futbol</label>
+            <label><input type="checkbox" name="deporte" value="basquetbol"> Basquetbol</label>
+            <label><input type="checkbox" name="deporte" value="tenis"> Tenis</label>
+        </fieldset>
+
+        <!-- Formulario 4 -->
+        <fieldset>
+            <legend>Uso de Select</legend>
+            <select name="pais" id="pais">
+                <option value="mexico">Mexico</option>
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <!-- Corregido: type="submit" y value="Enviar" al final de todo el formulario -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Etiqueta elegante para mostrar el mensaje de validación -->
+    <output id="mensajeValidacion"></output>
+
+    <!--pie de pagina-->
+    <footer>
+        <p>Hecho por will</p>
+    </footer>
+
+</body>
+</html>
