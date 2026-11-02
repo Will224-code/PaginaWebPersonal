@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <script src="./script/listar_usuarios.js" defer></script>
+    </head>
+    <body>
+        <!--encabezado-->
+        <header>
+            <!--botones-->    
+            <a href="index.html">Pagina inicial</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="autobiografia.html">Autobiografia</a>
+            <a href="contacto.html">Formulario de contacto</a>
+            <a href="login.html">Login</a>
+        </header>
+
+    <!--formulario-->
+    <h1>Inicio de sesion</h1>
+    <form method="POST" action="php/login_procesar.php">
+        <label for="usuario">Usuario:</label>
+        <!-- Se cambió name="nombre" a name="usuario" para mayor claridad -->
+        <input type="text" id="nombre" name="usuario" required>
+        <br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <br><br>
+        <button type="submit">Iniciar sesion</button>
+    </form>
+
+
+        <!--Listado de usuarios-->
+        <h2>Listado de usuarios</h2>
+        <table id="tablaUsuarios">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--aqui los datos de la bd-->
+            </tbody>
+        </table>
+
+    </body>
+</html>
